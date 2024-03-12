@@ -191,9 +191,10 @@ screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
     awful.tag(
-        { "main", "www", "other" },
+        { "main", "www", "music", "slack", "other" },
         s,
-        { awful.layout.suit.tile, awful.layout.suit.tile, awful.layout.suit.tile }
+        { awful.layout.suit.tile, awful.layout.suit.tile, awful.layout.suit.tile, awful.layout.suit.tile, awful.layout
+            .suit.tile }
     )
 
     -- Create a promptbox for each screen
